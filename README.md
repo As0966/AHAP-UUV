@@ -8,11 +8,7 @@ Izmir Katip Celebi University, Department of Electrical and Electronics Engineer
 
 ## Video: case 1E (thruster fault and tether snag)
 
-
-
 https://github.com/user-attachments/assets/add95605-5d90-4b11-a070-890b1c7fd82e
-
-
 
 <!-- To make the video play here: open this README in the GitHub web editor, delete the line
      VIDEO-PLAYER-LINK above and drag media/case1E_ahap.mp4 into its place. GitHub uploads it
@@ -32,8 +28,6 @@ The six-thruster BlueROV2 follows a figure-eight at 8 m depth (5 m amplitude, 0.
 
 AHAP keeps the position error inside the prescribed envelope throughout: the largest error reaches 78–82% of the envelope (5 noise realisations), against 88–93% for an equally informed adaptive-backstepping baseline.
 
-![Case 1E: path inside the envelope tube and error against the shrinking envelope](docs/figures/envelope_case1E.png)
-
 ## The controller
 
 AHAP controls five degrees of freedom of the six-thruster BlueROV2 (x, y, z, roll, yaw); pitch has no independent thrust and is left passive, with a speed condition that keeps it bounded. It combines five elements:
@@ -43,12 +37,6 @@ AHAP controls five degrees of freedom of the six-thruster BlueROV2 (x, y, z, rol
 3. **Adaptive regressor:** only gravity and buoyancy are compensated; the linear drag, quadratic drag and bias of each axis are learned online (15 parameters, projection and σ-modification).
 4. **Health-aware allocation:** a redistributed pseudo-inverse weighted by the reported thruster health shifts thrust away from a degraded thruster.
 5. **Pseudo-control hedging:** the part of the command the thrusters cannot deliver slows the reference instead of winding up the adaptation.
-
-| Vehicle | Thruster layout |
-| --- | --- |
-| ![BlueROV2](docs/figures/bluerov2.png) | ![Thruster layout](docs/figures/thruster_layout.png) |
-
-![Case 1E: thruster forces and adaptive bias estimates](docs/figures/thrust_bias_case1E.png)
 
 ## Data
 
