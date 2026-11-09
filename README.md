@@ -8,7 +8,11 @@ Izmir Katip Celebi University, Department of Electrical and Electronics Engineer
 
 ## Video: case 1E (thruster fault and tether snag)
 
-VIDEO-PLAYER-LINK
+
+
+https://github.com/user-attachments/assets/add95605-5d90-4b11-a070-890b1c7fd82e
+
+
 
 <!-- To make the video play here: open this README in the GitHub web editor, delete the line
      VIDEO-PLAYER-LINK above and drag media/case1E_ahap.mp4 into its place. GitHub uploads it
